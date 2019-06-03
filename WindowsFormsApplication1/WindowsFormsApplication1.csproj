@@ -1,0 +1,614 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FE3B7459-508C-4B6A-A72B-BCC169BF97FF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="A propos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A propos.Designer.cs">
+      <DependentUpon>A propos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aide.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aide.Designer.cs">
+      <DependentUpon>Aide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attachement.cs" />
+    <Compile Include="AttachementEtat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttachementEtat.Designer.cs">
+      <DependentUpon>AttachementEtat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AttachementG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttachementG.Designer.cs">
+      <DependentUpon>AttachementG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attachement_Mise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attachement_Mise.Designer.cs">
+      <DependentUpon>Attachement_Mise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bordereau.cs" />
+    <Compile Include="Bordereauprixappro.cs" />
+    <Compile Include="Bordereauprixpres.cs" />
+    <Compile Include="Bordereau_Mise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bordereau_Mise.Designer.cs">
+      <DependentUpon>Bordereau_Mise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BordureauDesPrix.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BordureauDesPrix.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BordureauEtat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BordureauEtat.Designer.cs">
+      <DependentUpon>BordureauEtat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BordureauPrixAppro_Mise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BordureauPrixAppro_Mise.Designer.cs">
+      <DependentUpon>BordureauPrixAppro_Mise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BordureauPrixPres_Mise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BordureauPrixPres_Mise.Designer.cs">
+      <DependentUpon>BordureauPrixPres_Mise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="connection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="connection.Designer.cs">
+      <DependentUpon>connection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Decompte.cs" />
+    <Compile Include="DecompteEtat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DecompteEtat.Designer.cs">
+      <DependentUpon>DecompteEtat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Decompte_Mise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Decompte_Mise.Designer.cs">
+      <DependentUpon>Decompte_Mise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Directeur.cs" />
+    <Compile Include="Directeur_Mise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Directeur_Mise.Designer.cs">
+      <DependentUpon>Directeur_Mise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Direction.cs" />
+    <Compile Include="Direction_Mise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Direction_Mise.Designer.cs">
+      <DependentUpon>Direction_Mise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diriger.cs" />
+    <Compile Include="Diriger_Mise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diriger_Mise.Designer.cs">
+      <DependentUpon>Diriger_Mise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etat ex.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Etat ex.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EtatAt1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EtatAt1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EtatAt2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EtatAt2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EtatAttachement.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EtatAttachement.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EtatDecompte.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EtatDecompte.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EtatDecompteS1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EtatDecompteS1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EtatDecompteS2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EtatDecompteS2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EtatOrdre.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EtatOrdre.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarchésP.cs" />
+    <Compile Include="MarchésP_Mise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarchésP_Mise.Designer.cs">
+      <DependentUpon>MarchésP_Mise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu Mise a jour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Mise a jour.Designer.cs">
+      <DependentUpon>Menu Mise a jour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPrincipale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipale.Designer.cs">
+      <DependentUpon>MenuPrincipale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ordonnanceur.cs" />
+    <Compile Include="Ordonnanceur_Mise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ordonnanceur_Mise.Designer.cs">
+      <DependentUpon>Ordonnanceur_Mise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdreAffiche.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdreAffiche.Designer.cs">
+      <DependentUpon>OrdreAffiche.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ordre_Service.cs" />
+    <Compile Include="Ordre_Service_Mise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ordre_Service_Mise.Designer.cs">
+      <DependentUpon>Ordre_Service_Mise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prestataire.cs" />
+    <Compile Include="Prestataire_Mise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prestataire_Mise.Designer.cs">
+      <DependentUpon>Prestataire_Mise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principale.Designer.cs">
+      <DependentUpon>Principale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prixappro.cs" />
+    <Compile Include="PrixAppro_Mise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrixAppro_Mise.Designer.cs">
+      <DependentUpon>PrixAppro_Mise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prixprestation.cs" />
+    <Compile Include="PrixPrestation_Mise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrixPrestation_Mise.Designer.cs">
+      <DependentUpon>PrixPrestation_Mise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Services.cs" />
+    <EmbeddedResource Include="A propos.resx">
+      <DependentUpon>A propos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Aide.resx">
+      <DependentUpon>Aide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttachementEtat.resx">
+      <DependentUpon>AttachementEtat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttachementG.resx">
+      <DependentUpon>AttachementG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attachement_Mise.resx">
+      <DependentUpon>Attachement_Mise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bordereau_Mise.resx">
+      <DependentUpon>Bordereau_Mise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BordureauDesPrix.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BordureauDesPrix.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BordureauEtat.resx">
+      <DependentUpon>BordureauEtat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BordureauPrixAppro_Mise.resx">
+      <DependentUpon>BordureauPrixAppro_Mise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BordureauPrixPres_Mise.resx">
+      <DependentUpon>BordureauPrixPres_Mise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="connection.resx">
+      <DependentUpon>connection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DecompteEtat.resx">
+      <DependentUpon>DecompteEtat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Decompte_Mise.resx">
+      <DependentUpon>Decompte_Mise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Directeur_Mise.resx">
+      <DependentUpon>Directeur_Mise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Direction_Mise.resx">
+      <DependentUpon>Direction_Mise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diriger_Mise.resx">
+      <DependentUpon>Diriger_Mise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etat ex.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Etat ex.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EtatAt1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EtatAt1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EtatAt2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EtatAt2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EtatAttachement.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EtatAttachement.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EtatDecompte.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EtatDecompte.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EtatDecompteS1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EtatDecompteS1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EtatDecompteS2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EtatDecompteS2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EtatOrdre.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EtatOrdre.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarchésP_Mise.resx">
+      <DependentUpon>MarchésP_Mise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Mise a jour.resx">
+      <DependentUpon>Menu Mise a jour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipale.resx">
+      <DependentUpon>MenuPrincipale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ordonnanceur_Mise.resx">
+      <DependentUpon>Ordonnanceur_Mise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdreAffiche.resx">
+      <DependentUpon>OrdreAffiche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ordre_Service_Mise.resx">
+      <DependentUpon>Ordre_Service_Mise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prestataire_Mise.resx">
+      <DependentUpon>Prestataire_Mise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principale.resx">
+      <DependentUpon>Principale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrixAppro_Mise.resx">
+      <DependentUpon>PrixAppro_Mise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrixPrestation_Mise.resx">
+      <DependentUpon>PrixPrestation_Mise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Directeur.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prestataire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\direction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diriger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ordre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ordonnanceur.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marche.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marche1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maj1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maj2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RECHERCHE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\del.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\del1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\last.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\first.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roght.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\homeG.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\homeG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\offre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ordre1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ordre2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bkcc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mac-background-photos-computer-photo-update-latest-freak.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bkf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bordureau.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ordre3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\attachement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\decompte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Principale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Principale1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\link.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\propos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendrier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\attachementG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aide1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aide2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aide3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aide4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading-2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multiply.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
